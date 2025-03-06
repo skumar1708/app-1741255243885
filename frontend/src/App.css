@@ -1,0 +1,54 @@
+.app {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.status {
+  margin-bottom: 20px;
+}
+
+.reset-button, .dark-mode-toggle {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .square {
+  background: #444;
+  color: #fff;
+}
+
+.dark-mode .status {
+  color: #fff;
+}
+
+.dark-mode .reset-button, .dark-mode .dark-mode-toggle {
+  background-color: #555;
+  color: #fff;
+}
